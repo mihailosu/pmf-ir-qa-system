@@ -8,9 +8,7 @@ import java.util.Map;
 
 import org.apache.lucene.queryparser.classic.ParseException;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import ir.QuestionSearcher;
 
@@ -21,6 +19,12 @@ public class SearchController {
 	
 	public SearchController() throws IOException {
 		this.qs = new QuestionSearcher("questions_index");
+	}
+
+	@PostMapping("/submit-question")
+	public ResponseEntity<String> submitQuestion(@RequestBody Map<String, String> request) {
+		String question = request.get("question");
+		return ResponseEntity.ok("You submitted: " + question);
 	}
 	
 	@GetMapping("/")
@@ -34,14 +38,20 @@ public class SearchController {
 		
 		String[][] retval = this.qs.find(q);
 		List<Map<String, String>> res = new ArrayList<Map<String,String>>();
-		
+
 		for (int i = 0; i < retval.length; i++) {
 			HashMap<String, String> h = new HashMap<String, String>();
 			h.put("q", retval[i][0]);
 			h.put("a", retval[i][1]);
 			res.add(h);
 		}
-		
+
+		HashMap<String,String> korisnicko = new HashMap<String, String>();
+		korisnicko.put("q", q);
+		korisnicko.put("a", "");
+		res.add(korisnicko);
+
 		return ResponseEntity.ok(res);
 	}
+
 }
