@@ -85,8 +85,8 @@ public class QuestionIndexer {
 	public static void main(String[] args) throws IOException {
 		
 		QuestionIndexer qi = new QuestionIndexer("questions_index", true);
-		
-		qi.indexQuestionAnswerPairs("res/QnA.csv");
+
+		qi.indexQuestionAnswerPairs("indexer_service/src/main/resources/QnA.csv");//ispravljena putanja
 		
 		qi.finishIndexing();
 		
