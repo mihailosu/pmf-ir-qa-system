@@ -73,8 +73,8 @@ public class QuestionSearcher {
 	}
 	
 	public static void main(String[] args) throws IOException, ParseException {
-		QuestionSearcher qs = new QuestionSearcher("questions_index");
-		
+		//QuestionSearcher qs = new QuestionSearcher("questions_index");
+		QuestionSearcher qs = new QuestionSearcher("indexer_service/src/main/resources/questions_index");
 		qs.find("What Companies Will Issue Life Insurance To The Mentally Ill");
 		
 		qs.close();

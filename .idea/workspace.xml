@@ -5,30 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcd9f045-bce0-4aee-ab98-3e1ba061fb0f" name="Changes" comment="postavljanje projekta">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/pmf-ir-qa-system.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/indexer_service/src/main/java/app/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/indexer_service/target/classes/app/WebConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/indexer_service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/indexer_service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/questions_index/_1.cfe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/questions_index/_1.cfs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/questions_index/_1.si" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/questions_index/segments_2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/questions_index/write.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer_service/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/indexer_service/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer_service/src/main/java/app/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/indexer_service/src/main/java/app/SearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexer_service/src/main/java/app/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/indexer_service/src/main/java/app/WebConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/indexer_service/src/main/java/ir/QuestionIndexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/indexer_service/src/main/java/ir/QuestionIndexer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer_service/target/classes/app/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/indexer_service/target/classes/app/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer_service/target/classes/app/SearchController.class" beforeDir="false" afterPath="$PROJECT_DIR$/indexer_service/target/classes/app/SearchController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexer_service/src/main/java/ir/QuestionSearcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/indexer_service/src/main/java/ir/QuestionSearcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexer_service/target/classes/app/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/indexer_service/target/classes/app/WebConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/indexer_service/target/classes/ir/QuestionIndexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/indexer_service/target/classes/ir/QuestionIndexer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer_service/target/classes/ir/QuestionSearcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/indexer_service/target/classes/ir/QuestionSearcher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/questions_index/_1.cfe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/questions_index/_1.cfs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/questions_index/_1.si" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/questions_index/segments_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/questions_index/write.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,27 +53,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.QuestionIndexer.executor": "Run",
-    "Application.QuestionSearcher.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.Application.executor": "Run",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Srdjan/Desktop/temp/pmf-ir-qa-system",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.QuestionIndexer.executor&quot;: &quot;Run&quot;,
+    &quot;Application.QuestionSearcher.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Application.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Srdjan/Desktop/temp/pmf-ir-qa-system&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Spring Boot.Application">
     <configuration name="QuestionIndexer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ir.QuestionIndexer" />
@@ -148,7 +135,8 @@
       <workItem from="1723215811910" duration="3759000" />
       <workItem from="1723222509171" duration="896000" />
       <workItem from="1723223648955" duration="646000" />
-      <workItem from="1723469687921" duration="9628000" />
+      <workItem from="1723469687921" duration="10216000" />
+      <workItem from="1723562246350" duration="3742000" />
     </task>
     <task id="LOCAL-00001" summary="test prvog comita">
       <option name="closed" value="true" />
