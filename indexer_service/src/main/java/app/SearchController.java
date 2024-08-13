@@ -18,7 +18,7 @@ public class SearchController {
 	QuestionSearcher qs;
 	
 	public SearchController() throws IOException {
-		this.qs = new QuestionSearcher("questions_index");
+		this.qs = new QuestionSearcher("indexer_service/src/main/resources/questions_index");
 	}
 
 	@PostMapping("/submit-question")
