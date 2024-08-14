@@ -1,0 +1,9 @@
+fastapi==0.112.0
+numpy==2.0.1
+pandas==2.2.2
+Requests==2.32.3
+tensorflow==2.10.0
+tensorflow_cpu==2.15.1
+torch==2.2.2
+torchtext==0.17.2
+uvicorn==0.30.6
