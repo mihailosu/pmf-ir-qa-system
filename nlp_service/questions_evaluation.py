@@ -1,3 +1,5 @@
+# THIS FILE CAN BE IGNORED/ERASED -> contents used now in main.py
+
 import json
 import numpy as np
 import pandas as pd
