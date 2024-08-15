@@ -17,3 +17,6 @@ Chatbot contains 3 software components:
 
 ## Design
 ![diagram](diagram.jpeg)
+
+## How to run the project
+todo
