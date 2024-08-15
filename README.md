@@ -16,7 +16,7 @@ Chatbot contains 3 software components:
 3. Natural language processing service - Siamese neural network for text processing - Python
 
 ## Design
-![diagram](diagram.jpeg)
+![diagram](diagram.png)
 
 ## How to run the project
 todo
