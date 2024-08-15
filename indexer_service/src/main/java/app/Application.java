@@ -9,3 +9,4 @@ public class Application {
 		SpringApplication.run(Application.class, args);
 	}
 }
+//kako da definisemo port na kom rade

@@ -42,6 +42,9 @@
             })
             .then(searchResults => {
                 console.log("Search results: ", searchResults)
+                const lastObj = searchResults[searchResults.length - 1];
+                const answer = lastObj.a;
+                document.getElementById("answerBox").value = answer || "No answer found for your question."
             })
             .catch(error => {
                 console.error('Error:', error);
