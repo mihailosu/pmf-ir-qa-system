@@ -5,4 +5,7 @@
 .idea/
 
 # ignore vector cache
-.vector_cache
+.vector_cache/
+
+# nlp testing
+nlp_service/testing
