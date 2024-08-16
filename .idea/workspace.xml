@@ -6,16 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="dcd9f045-bce0-4aee-ab98-3e1ba061fb0f" name="Changes" comment="postavljanje projekta">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer_service/src/main/java/app/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/indexer_service/src/main/java/app/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer_service/src/main/java/ir/QuestionIndexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/indexer_service/src/main/java/ir/QuestionIndexer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer_service/src/main/java/ir/QuestionSearcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/indexer_service/src/main/java/ir/QuestionSearcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer_service/target/classes/app/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/indexer_service/target/classes/app/WebConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer_service/target/classes/ir/QuestionIndexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/indexer_service/target/classes/ir/QuestionIndexer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/questions_index/_1.cfe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/questions_index/_1.cfs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/questions_index/_1.si" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/questions_index/segments_2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/questions_index/write.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexer_service/src/main/java/app/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/indexer_service/src/main/java/app/SearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nlp_service/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/nlp_service/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +18,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -43,6 +36,10 @@
     &quot;url&quot;: &quot;https://github.com/mihailosu/pmf-ir-qa-system.git&quot;,
     &quot;accountId&quot;: &quot;f0b28188-2c2b-4b3a-b324-1e780218350d&quot;
   }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
 }</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -71,6 +68,9 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -136,7 +136,12 @@
       <workItem from="1723222509171" duration="896000" />
       <workItem from="1723223648955" duration="646000" />
       <workItem from="1723469687921" duration="10216000" />
-      <workItem from="1723562246350" duration="3742000" />
+      <workItem from="1723562246350" duration="4156000" />
+      <workItem from="1723640577952" duration="10896000" />
+      <workItem from="1723720513487" duration="1510000" />
+      <workItem from="1723728694621" duration="4053000" />
+      <workItem from="1723734148175" duration="47000" />
+      <workItem from="1723806153976" duration="3209000" />
     </task>
     <task id="LOCAL-00001" summary="test prvog comita">
       <option name="closed" value="true" />
