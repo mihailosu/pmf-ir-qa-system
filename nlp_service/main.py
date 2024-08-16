@@ -6,7 +6,10 @@ from torchtext.vocab import GloVe
 from tensorflow.keras.models import load_model
 from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse
-import uvicorn
+# import uvicorn
+import hypercorn.asyncio
+import asyncio
+
 
 glove = GloVe(name="6B", dim=50) # load glove embeddings
 
@@ -22,7 +25,7 @@ def preprocess_question(question, glove): # first we need to preprocess the ques
 
 @app.get("/")
 async def start():
-    return "Hello"
+    return "NLP Service working!"
 
 @app.post("/process-questions/")
 async def process_questions(request: Request):
@@ -64,5 +67,7 @@ async def process_questions(request: Request):
 
 
 if __name__ == "__main__":
-   uvicorn.run(app, host="127.0.0.1", port=8000)  # run server on port 3000
-
+    # uvicorn.run(app, host="127.0.0.1", port=8000)  # run server on port 3000
+    config = hypercorn.Config()
+    config.bind = ["127.0.0.1:8000"]
+    asyncio.run(hypercorn.asyncio.serve(app, config))
