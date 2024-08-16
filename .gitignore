@@ -14,3 +14,6 @@ nlp_service/testing
 indexer_service/.idea
 indexer_service/.settings
 indexer_service/.DS_Store
+
+# ignore vscache
+nlp_service/__pycache__
