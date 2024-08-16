@@ -21,6 +21,10 @@ def preprocess_question(question, glove): # first we need to preprocess the ques
     vector = torch.mean(torch.stack(vectors), dim=0).numpy()
     return vector
 
+@app.get("/")
+async def start():
+    return "Hello"
+
 @app.post("/process-questions/")
 async def process_questions(request: Request):
     questions_json = await request.json()
@@ -62,3 +66,4 @@ async def process_questions(request: Request):
 
 if __name__ == "__main__":
     uvicorn.run(app, host="127.0.0.1", port=8000)  # run server on port 3000
+
