@@ -2,7 +2,6 @@ import json
 import numpy as np
 import pandas as pd
 import torch
-import requests
 from torchtext.vocab import GloVe
 from tensorflow.keras.models import load_model
 from fastapi import FastAPI, Request
@@ -65,5 +64,5 @@ async def process_questions(request: Request):
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="127.0.0.1", port=8000)  # run server on port 3000
+   uvicorn.run(app, host="127.0.0.1", port=8000)  # run server on port 3000
 
