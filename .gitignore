@@ -9,3 +9,7 @@
 
 # nlp testing
 nlp_service/testing
+
+# indexer_service
+indexer_service/.idea
+indexer_service/.settings
