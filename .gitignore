@@ -1,0 +1,11 @@
+# ignore vscode files
+.vscode/
+
+# ignore idea viles
+.idea/
+
+# ignore vector cache
+.vector_cache/
+
+# nlp testing
+nlp_service/testing
