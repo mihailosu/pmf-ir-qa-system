@@ -21,18 +21,20 @@ Chatbot contains 3 software components:
 ## How to run the project
 First clone the project:
 
-'''
+```
   git clone git@github.com:mihailosu/pmf-ir-qa-system.git
-'''
+```
 
 Use docker-compose to build and run the project:
 
-'''
+```
   docker-compose buid
   docker-compose up
-'''
+```
 
 Open the app in your browser:
-'''
+
+```
   http://localhost:3000/
-'''
+```
+
