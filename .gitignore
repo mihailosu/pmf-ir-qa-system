@@ -4,6 +4,9 @@
 # ignore idea viles
 .idea/
 
+# ignore ipynbs
+.ipynb_checkpoints/
+
 # ignore vector cache
 .vector_cache/
 
