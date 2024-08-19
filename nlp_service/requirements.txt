@@ -2,6 +2,9 @@ fastapi==0.112.0
 hypercorn==0.14.0
 pandas==2.2.2
 numpy==1.26.4
+notebook==7.2.1
+gensim==4.3.3
+scikit-learn==1.5.1
 torch==2.2.2 --index-url https://download.pytorch.org/whl/cpu
 torchtext==0.17.2
 tensorflow-cpu==2.10.0
