@@ -45,7 +45,6 @@ async def process_questions(request: Request):
 
     users_question = questions.iloc[[-1]]
 
-
     siamese_network = load_model('model/siamese_model.h5') # load the model
 
     similarity_scores = []
@@ -67,7 +66,7 @@ async def process_questions(request: Request):
 
 
 if __name__ == "__main__":
-    # uvicorn.run(app, host="127.0.0.1", port=8000)  # run server on port 3000
+    # uvicorn.run(app, host="127.0.0.1", port=8000)  # run server
     config = hypercorn.Config()
-    config.bind = ["127.0.0.1:8000"]
+    config.bind = ["127.0.0.1:8000"] # run server
     asyncio.run(hypercorn.asyncio.serve(app, config))
