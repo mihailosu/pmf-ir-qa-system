@@ -28,7 +28,7 @@ First clone the project:
 Use docker-compose to build and run the project:
 
 ```
-  docker-compose buid
+  docker-compose build
   docker-compose up
 ```
 
