@@ -19,36 +19,56 @@
 </body>
 
 <script>
-    function submitQuestion(){
-        const userQuestion = document.getElementById("question").value;
-        console.log(userQuestion);
-        fetch('http://localhost:8080/submit-question', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ question: userQuestion })
-        })
-            .then(response => response.text())
-            .then(data => {
-                console.log(data);
-                return fetch(`http://localhost:8080/search?q=${userQuestion}`);
-            })
-            .then(response => {
-                if(!response.ok){
-                    throw new Error('Error' + response.statusText);
-                }
-                return response.json();
-            })
-            .then(searchResults => {
-                console.log("Search results: ", searchResults)
-                const lastObj = searchResults[searchResults.length - 1];
-                const answer = lastObj.a;
-                document.getElementById("answerBox").value = answer || "No answer found for your question."
-            })
-            .catch(error => {
-                console.error('Error:', error);
-            });
+
+    const config = {
+        indexerServiceUrl: 'http://localhost:8080',
+        nlpServiceUrl: 'http://localhost:8000'
     }
+
+    function submitQuestion() {
+    const userQuestion = document.getElementById("question").value;
+    console.log("Submitting question:", userQuestion);
+    
+    //fetch('http://indexer-service:8080/submit-question', {
+    fetch(`${config.indexerServiceUrl}/submit-question`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ question: userQuestion })
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`Submit Question Request Failed: ${response.statusText}`);
+        }
+        return response.text();
+    })
+    .then(data => {
+        console.log("Submit question response data:", data);
+        //return fetch(`http://indexer-service:8080/search?q=${encodeURIComponent(userQuestion)}`);
+        return fetch(`${config.indexerServiceUrl}/search?q=${encodeURIComponent(userQuestion)}`);
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`Search Request Failed: ${response.statusText}`);
+        }
+        return response.json();
+    })
+    .then(searchResults => {
+        console.log("Search results:", searchResults);
+        if (Array.isArray(searchResults) && searchResults.length > 0) {
+            const lastObj = searchResults[searchResults.length - 1];
+            const answer = lastObj.a;
+            document.getElementById("answerBox").value = answer || "No answer found for your question.";
+        } else {
+            document.getElementById("answerBox").value = "No search results found.";
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        document.getElementById("answerBox").value = "An error occurred. Please try again.";
+    });
+}
+
 </script>
 </html>
