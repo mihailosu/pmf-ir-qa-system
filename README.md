@@ -38,3 +38,4 @@ Open the app in your browser:
   http://localhost:3000/
 ```
 
+Note that glove 6B first needs to be loaded into memory for the NLP service to work. You can check the status of glove download in docker dekstop logs. After glove 6B has been downloaded, NLP service will start. You can then use the app at http://localhost:3000/.
