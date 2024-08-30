@@ -53,7 +53,7 @@ public class SearchController {
 		res.add(korisnicko);
 		//poslati na treci endpoint i vratiti najslicnije pitanje, bibli za poziv preko httpa(post in java)
 		RestTemplate restTemplate = new RestTemplate();
-		String nlpServiceUrl = "http://127.0.0.1:8000/process-questions/";
+		String nlpServiceUrl = "http://nlp-service:8000/process-questions/";
 		HttpHeaders headers = new HttpHeaders();
 		headers.setContentType(MediaType.APPLICATION_JSON);
 

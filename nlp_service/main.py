@@ -6,6 +6,7 @@ from torchtext.vocab import GloVe
 from tensorflow.keras.models import load_model
 from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse
+from fastapi.middleware.cors import CORSMiddleware
 # import uvicorn
 import hypercorn.asyncio
 import asyncio
@@ -14,6 +15,15 @@ import asyncio
 glove = GloVe(name="6B", dim=50) # load glove embeddings
 
 app = FastAPI() # create FastAPI app
+
+app.add_middleware(
+    CORSMiddleware,
+    #allow_origins=["http://localhost:3000", "http://localhost:8080"],  # Allows all origins
+    allow_origins=["*"],  # Allows all origins
+    allow_credentials=True,
+    allow_methods=["POST"],  # Allows all methods
+    allow_headers=["*"],  # Allows all headers
+)
 
 def preprocess_question(question, glove): # first we need to preprocess the questions
     tokens = question.lower().split()
@@ -68,5 +78,5 @@ async def process_questions(request: Request):
 if __name__ == "__main__":
     # uvicorn.run(app, host="127.0.0.1", port=8000)  # run server
     config = hypercorn.Config()
-    config.bind = ["127.0.0.1:8000"] # run server
+    config.bind = ["0.0.0.0:8000"] # run server
     asyncio.run(hypercorn.asyncio.serve(app, config))
